@@ -1,18 +1,25 @@
 # crnas
 
-TODO: Write a description here
+A file sharing web app that allows users to share files privatly using a key - password system. A downloader must have both the key name, and the password, to download a file.
 
 ## Installation
 
-TODO: Write installation instructions here
+`shards install`
+`crystal run ./src/app.cr`
 
 ## Usage
 
-TODO: Write usage instructions here
+Navigate your browser to 127.0.0.1:3000, you can also use `curl` to upload and download files.
+
+`curl -F "password=123" -F "file@=/path/to/file" http://localhost:3000/upload`
+
+`curl -F "storename=0c7e02f7-c9b7-4f9e-97f0-276d47acd7ef"-F "password=123" http://localhost:3000/download`
+or
+`curl -F "password=123" http://localhost:3000/download/0c7e02f7-c9b7-4f9e-97f0-276d47acd7ef`
 
 ## Development
 
-TODO: Write development instructions here
+Fork it or something idc
 
 ## Contributing
 
@@ -24,4 +31,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Ian Rash - creator, maintainer
+- [redcodefinal](https://github.com/redcodefinal) Ian Rash - creator, maintainer
