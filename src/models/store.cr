@@ -4,6 +4,7 @@ class Store < Granite::Base
   adapter sqlite
 
   field name : String
+  field filename : String
   field path : String
   field password : String
 
