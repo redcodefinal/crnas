@@ -1,0 +1,16 @@
+- Add user accounts/anon uploads
+- Create database
+  - name, size, ownership, password, date added
+  - user accounts, name, 
+- Settings page
+  - Privacy Settings
+    - Location access Settings
+      - Internal Ip? What access is it allowed to have
+      - External ip? Should it be allowed to create accounts, upload files, download files, etc?
+      - Share who uploaded? (Always anonymous mode)
+  - User Settings
+    - Allow new user creation (check box)
+    - Anonymous level
+      - Disable login (Full Anonymous mode)
+      - Enable Anonymous Account (Anonymous)
+      - Disable anonymous account (No anon mode)

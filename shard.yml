@@ -1,0 +1,20 @@
+name: crnas
+version: 0.1.0
+
+authors:
+  - Ian Rash <redcodefinal@gmail.com>
+
+targets:
+  crnas:
+    main: src/crnas.cr
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  granite:
+    github: amberframework/granite
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+
+crystal: 0.24.1
+
+license: MIT
