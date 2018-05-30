@@ -1,8 +1,0 @@
-<center>
-<ul>
-<% files.each do |file| %>
-  <% filesize = File.size(File.join [Kemal.config.public_folder, "files/", file]) %>
-  <li><a href="/files/<%= file %>"><%= file %> - <%= filesize %>B</a>
-<% end %>
-</ul>
-</center>

@@ -1,5 +1,6 @@
 /doc/
 /lib/
 /bin/
+/db/*
 /.shards/
 /public/files/*

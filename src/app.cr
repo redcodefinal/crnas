@@ -70,7 +70,9 @@ post "/download" do |env|
 
   store = Store.find_by :name, name
   if store && password == store.password
-    send_file env, store.path.to_s
+    storename = store.path.to_s.split('/')[-2]
+    filename = store.path.to_s.split('/')[-1]
+    env.redirect "/files/#{storename}/#{filename}"
   else
     env.redirect "/wrongpassword"
   end
