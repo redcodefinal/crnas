@@ -9,11 +9,11 @@ A file sharing web app that allows users to share files privatly using a key - p
 
 ## Usage
 
-Navigate your browser to 127.0.0.1:3000, you can also use `curl` to upload and download files.
+Navigate your browser to http://127.0.0.1:3000, http://0.0.0.0:3000 or, http://localhost:3000 you can also use `curl` to upload and download files.
 
 `curl -F "password=123" -F "file@=/path/to/file" http://localhost:3000/upload`
 
-`curl -F "storename=0c7e02f7-c9b7-4f9e-97f0-276d47acd7ef"-F "password=123" http://localhost:3000/download`
+`curl -F "storename=0c7e02f7-c9b7-4f9e-97f0-276d47acd7ef" -F "password=123" http://localhost:3000/download`
 or
 `curl -F "password=123" http://localhost:3000/download/0c7e02f7-c9b7-4f9e-97f0-276d47acd7ef`
 
